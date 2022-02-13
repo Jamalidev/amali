@@ -1,0 +1,53 @@
+/* Custom Classes */
+.cursorPointer {
+  cursor: pointer;
+}
+
+
+/* Embla Carousel */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+.embla__slide.product {
+  margin-right: 10px;
+  margin-left: 10px;
+  flex: 0 0 calc(50% - 20px); /* Default slide covers 100% of the viewport */
+ }
+ @media (min-width: 768px) {
+  .embla__slide.product {
+    flex: 0 0 calc(33% - 20px); /* Breakpoint SM slide covers 50% of the viewport */
+  }
+ }
+ @media (min-width: 992px) {
+  .embla__slide.product {
+    flex: 0 0 calc(25% - 20px); /* Breakpoint SM slide covers 50% of the viewport */
+  }
+ }
+ @media (min-width: 1280px) {
+  .embla__slide.product {
+    flex: 0 0 calc(20% - 20px); /* Breakpoint SM slide covers 50% of the viewport */
+  }
+ }
+
+ @media (max-width: 991px) {
+  li.login {
+    padding-left: 0px !important;
+  }
+ }
+
+.offset-lg-3 {
+    padding-left: 8rem !important;
+}
+
+.menuBarsActive {
+  visibility: visible;
+  transform: translateX(280px);
+}
+ 
